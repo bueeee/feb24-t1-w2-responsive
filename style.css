@@ -5,41 +5,63 @@ body {
   background-color: rgb(52, 189, 132);
  /* font-family: Arial, Helvetica, sans-serif; */
  font-family: "Noto Sans JP", sans-serif;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ /* align-items: center; */
 
 }
-
+.row > .column  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nestedRow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
 
 .nestedContent {
   background-color: rgb(51, 54, 209);
 }
 
 .column {
-width: 100%;
+width: 500px;
+}
+.row {
+  display: flex;
+  flex-direction: column
 }
 
 
+}
+
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
 content: "";
 display: table;
-clear: both;
+clear: both; */
 }
 
 /* Styles for screens 600px wide and larger */
 @media screen and (min-width: 600px) {
   body {
       background-color: rgb(0, 0, 0) 226);
+  
   }
+  .row {
+    display: flex;
+    flex-direction: row;
 
   h3 {
     display: none;
-  }
+ 
 
   /* Create three equal columns that float next to each other */
-.column {
-float: left;
-width: 33.33%;
+
+
 }
 
   
