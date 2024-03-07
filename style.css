@@ -1,8 +1,41 @@
+ 
 body {
-    background-color: aliceblue;
+  background-color: rgb(52, 189, 132);
 }
+
+
+.nestedContent {
+  background-color: rgb(51, 54, 209);
+}
+
+.column {
+width: 100%;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Styles for screens 600px wide and larger */
 @media screen and (min-width: 600px) {
-    body {
-        background-color: aqua;
-    }
+  body {
+      background-color: rgb(0, 0, 0) 226);
+  }
+
+  h3 {
+    display: none;
+  }
+
+  /* Create three equal columns that float next to each other */
+.column {
+float: left;
+width: 33.33%;
+}
+
+  
 }
